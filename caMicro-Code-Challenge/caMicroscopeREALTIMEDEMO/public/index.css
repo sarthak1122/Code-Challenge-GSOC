@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+#room-buttons{
+    display:flex;
+    flex-direction: row;
+}
+.room-button{
+    /* margin-right: 0.5%; */
+
+}
+#room-status{
+    display:flex;
+    justify-content: center;
+    /* heihgt */
+}
+#seadragon-viewer{
+    border:1px solid grey;
+    width:50%;
+}
+.interface-container{
+    /* display:flex; */
+    /* flex-direction: row; */
+}
+.chat-container{
+ background-color: #404040;
+ height:29%;
+ width:100%;
+}
+.chat-interface{
+    background-color: #404040;
+    /* border: 1px solid red; */
+    display:flex;
+    height:50%;
+    flex-direction:row;
+}
+.chat-log{
+    background-color:#606060;
+    height:60%;
+    max-height:300;
+    width:100%;
+    overflow:auto;
+    /* border:1px solid red; */
+}
+input{
+    width:50%;
+}

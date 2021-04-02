@@ -1,0 +1,41 @@
+<head>
+	<script src="//openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+	<script src="https://cdn.socket.io/3.1.1/socket.io.min.js" integrity="sha384-gDaozqUvc4HTgo8iZjwth73C6dDDeOJsAgpxBcMpZYztUfjHXpzrpdrHRdVp8ySO" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body class="grey effect part-2">
+	<nav>
+		<div class="nav-wrapper blue">
+		  <a href="#" class="brand-logo">Edge Detection Interface</a>
+		  <ul id="nav-mobile" class="right hide-on-med-and-down">
+			<liv>
+			<button class = "effects on hoverable yellow" id="create-room-button">Create Room</button>
+			</liv>
+			<liv>
+			<button class = "effects on hoverable light orange" id="join-room-button">Join Room</button>
+			</liv>
+			<liv>
+			<button class = "effect on hoverable deep red" id="leave-room-button" disabled=true>Leave Room</button>
+			</liv>
+		</ul>
+		</div>
+	  </nav>
+	<h5 id="room-status" class="z-depth-2">Room not created.</h5>
+	
+	<div class="interface-container">
+		<div id="seadragon-viewer" class="grey lighten-1" style="width:50%; height:50%;"></div>
+		<div class="chat-container">
+			<div class="chat-log collection">
+			</div>
+			<div class="chat-interface input-field">
+				<input class="chat-input grey">
+				<button class = "btn waves-effect waves-light green lighten-2" id="send-message-button" disabled=true>Send</button>
+			</div>
+		</div>
+	</div>
+		<!-- <div class="chat-container"></div> -->
+	<script type="text/javascript" src="script1.js"></script>
+	</div>
+</body>
